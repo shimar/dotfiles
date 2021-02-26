@@ -95,6 +95,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'tomtom/tcomment_vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 let g:airline_theme = 'luna'
@@ -103,3 +110,17 @@ let g:airline_powerline_fonts = 1
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+
+" ale
+let g:ale_fixers = {
+  \ 'ruby': ['rubocop'],
+  \}
+
+
+imap { {}<LEFT>
+imap [ []<LEFT>
+imap ( ()<LEFT>
+
