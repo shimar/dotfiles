@@ -102,6 +102,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'dense-analysis/ale'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 let g:airline_theme = 'luna'
@@ -115,12 +116,8 @@ map <C-n> :NERDTreeToggle<CR>
 let g:indent_guides_enable_on_vim_startup = 1
 
 " ale
+let g:ale_ruby_rubocop_executable = 'bundle'
 let g:ale_fixers = {
   \ 'ruby': ['rubocop'],
   \}
-
-
-imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
 
