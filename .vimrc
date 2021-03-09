@@ -9,6 +9,7 @@ set ambiwidth=double
 set wildmenu
 set cursorline
 set cursorcolumn
+set belloff=all
 colorscheme jellybeans
 
 set ignorecase
