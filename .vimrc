@@ -10,7 +10,7 @@ set wildmenu
 set cursorline
 set cursorcolumn
 set belloff=all
-colorscheme jellybeans
+colorscheme iceberg
 
 set ignorecase
 set smartcase
@@ -104,6 +104,7 @@ Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 let g:airline_theme = 'luna'
