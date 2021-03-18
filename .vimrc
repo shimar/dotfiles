@@ -113,6 +113,7 @@ let g:airline_powerline_fonts = 1
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden=1
 
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
