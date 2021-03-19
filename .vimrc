@@ -50,6 +50,9 @@ set nrformats=
 set whichwrap=b,s,h,l,<,>,[,],~
 set mouse=a
 
+" 行末の空白除去
+autocmd BufWritePre * :%s/\s\+$//ge
+
 " auto reload .vimrc
 augroup source-vimrc
   autocmd!
@@ -108,6 +111,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+" airline
 let g:airline_theme = 'papercolor'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
