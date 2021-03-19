@@ -10,7 +10,7 @@ set wildmenu
 set cursorline
 set cursorcolumn
 set belloff=all
-colorscheme iceberg
+colorscheme nord 
 
 set ignorecase
 set smartcase
@@ -28,7 +28,8 @@ set display=lastline
 set history=10000
 hi Comment ctermfg=3
 
-set ts=2
+set ts=4
+set sw=4
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -107,7 +108,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
-let g:airline_theme = 'luna'
+let g:airline_theme = 'papercolor'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
@@ -117,6 +118,8 @@ let g:NERDTreeShowHidden=1
 
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
 
 " ale
 let g:ale_ruby_rubocop_executable = 'bundle'
