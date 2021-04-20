@@ -10,7 +10,7 @@ set wildmenu
 set cursorline
 set cursorcolumn
 set belloff=all
-colorscheme nord 
+colorscheme monokai
 
 set ignorecase
 set smartcase
@@ -109,6 +109,8 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
+Plug 'tyru/caw.vim'
+Plug 'Shougo/unite.vim'
 call plug#end()
 
 " airline
@@ -130,4 +132,8 @@ let g:ale_ruby_rubocop_executable = 'bundle'
 let g:ale_fixers = {
   \ 'ruby': ['rubocop'],
   \}
+
+" caw.vim
+nmap <C-K> <Plug>(caw:zeropos:toggle)
+vmap <C-K> <Plug>(caw:zeropos:toggle)
 
